@@ -7,4 +7,4 @@ Passos:
     php artisan serve
     
     
-Laravel + JavaScript + DevExtreme + MySql
+Laravel + JavaScript/Jquery + DevExtreme + MySql
