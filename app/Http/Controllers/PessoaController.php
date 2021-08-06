@@ -130,14 +130,14 @@ class PessoaController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int $id
+     * @param  int $cpf
      * @return \Illuminate\Http\Response
      */
-    public function destroy(int $id)
+    public function destroy(int $cpf)
     {
 
         try {
-            $pessoa = Pessoa::find($id);
+            $pessoa = Pessoa::where('cpf','=',$cpf)->first();
             $pessoa->delete();
 
             return response()->json(['message' => 'Registro removido com sucesso'],200);

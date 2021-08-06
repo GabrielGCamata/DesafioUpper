@@ -192,7 +192,7 @@ $(async function(){
         onRowRemoving: function(e) {
             console.log(e);
             $.ajax({
-                url: "/api/pessoa/"+e.key,
+                url: "/api/pessoa/"+e.data.cpf,
                 type: "delete",
                 success: function (data) {
                     DevExpress.ui.notify("Registro removido com sucesso!", "success", 500);

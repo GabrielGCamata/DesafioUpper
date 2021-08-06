@@ -19,7 +19,7 @@ Route::get('pessoa', 'PessoaController@getall');
 Route::post('pessoa', 'PessoaController@store');
 Route::get('pessoa/{id}', 'PessoaController@show');
 Route::put('pessoa/{id}', 'PessoaController@update');
-Route::delete('pessoa/{id}', 'PessoaController@destroy');
+Route::delete('pessoa/{cpf}', 'PessoaController@destroy');
 
 
 Route::get('estado', 'EstadoController@index');
